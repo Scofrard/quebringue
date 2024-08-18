@@ -25,6 +25,7 @@ h1 {
     font-size: 6rem;
     line-height: 90%;
     color: var(--white);
+    margin: 0;
 }
 
 h2 {
@@ -36,7 +37,13 @@ h2 {
 h3 {
     font-family: "cubano", sans-serif;
     font-size: 1.8rem;
-    line-height: 95%;
+}
+
+p {
+    font-family: "Sora", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    margin: 0;
 }
 
 a {
@@ -147,6 +154,18 @@ header {
     justify-content: space-between;
     padding: 5rem;
 }
+
+.main-event h1 {
+    margin-bottom: 3rem;
+}
+
+.main-event p {
+    margin-bottom: 1rem;
+}
+
+.main-event a {
+    margin-top: 2rem;
+    }
 
 /* --- NIE LOUPER --- */
 /* --- NIE LOUPER --- */

@@ -33,6 +33,12 @@ h2 {
     line-height: 95%;
 }
 
+h3 {
+    font-family: "cubano", sans-serif;
+    font-size: 1.8rem;
+    line-height: 95%;
+}
+
 a {
     font-family: "cubano", sans-serif;
     font-weight: 400;
@@ -49,8 +55,9 @@ a {
     font-family: "cubano", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
+    display: inline-block;
 }
 
 .btn-secondary {
@@ -61,6 +68,18 @@ a {
     font-family: "cubano", sans-serif;
     font-size: 1.5rem;
     text-decoration: none;
+    display: inline-block;
+}
+
+.btn-tertiaire {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 1rem 2rem;
+    box-shadow: 5px 5px 0 var(--white), 5px 5px 0 3px var(--black);
+    font-family: "cubano", sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: inline-block;
 }
 
 /* --- CONTAINER --- */
@@ -146,5 +165,77 @@ header {
 h2.bringues {
     color: var(--black);
 }
+
+/* --- CARDS --- */
+/* --- CARDS --- */
+/* --- CARDS --- */
+
+
+.cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    gap: 5rem; 
+    padding-bottom: 5rem;
+}
+
+.card {
+    flex: 0 0 30%; 
+    scroll-snap-align: start;
+    background-color: var(--blue);
+    color: var(--black);
+    max-width: 400px; 
+    position: relative;
+    padding-bottom: 2rem;
+    box-shadow: 
+        12px 12px 0 var(--yellow), 
+        12px 12px 0 8px var(--blue);
+}
+
+.card:nth-child(3n+1) {
+    background-color: var(--blue);
+    box-shadow: 
+        12px 12px 0 var(--yellow),
+        12px 12px 0 8px var(--blue);
+}
+
+.card:nth-child(3n+2) {
+    background-color: var(--white);
+    box-shadow: 
+        12px 12px 0 var(--yellow),
+        12px 12px 0 8px var(--white);
+}
+
+.card:nth-child(3n) {
+    background-color: var(--pink);
+    box-shadow: 
+        12px 12px 0 var(--yellow),
+        12px 12px 0 8px var(--pink);
+}
+
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.contentcard {
+    margin: 0 2rem;
+}
+
+.contentcard h3 {
+    margin-bottom: 2rem;
+    }
+
+.contentcard p {
+    line-height: 0;
+    margin-bottom: 2rem;
+}
+
+.contentcard .btn-tertiaire {
+    float: right;
+}
+
+
 
 

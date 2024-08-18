@@ -1,0 +1,150 @@
+/* --- ELEMENTS --- */
+/* --- ELEMENTS --- */
+/* --- ELEMENTS --- */
+
+:root {
+    --black: #0D0D0D;
+    --yellow: #FFEC00;
+    --pink: #FF56C2;
+    --blue: #00BBBB;
+    --white: #FFFFFF;
+  }
+ 
+body {
+    margin:0;
+    padding:0;
+    background-color: var(--black);
+    font-family: "Sora", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: var(--white);
+}
+
+h1 {
+    font-family: "cubano", sans-serif;
+    font-size: 6rem;
+    line-height: 90%;
+    color: var(--white);
+}
+
+h2 {
+    font-family: "cubano", sans-serif;
+    font-size: 2.5rem;
+    line-height: 95%;
+}
+
+a {
+    font-family: "cubano", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.btn-primary {
+    color: var(--black);
+    background-color: var(--yellow);
+    padding: 1rem 2rem;
+    box-shadow: 7px 7px 0 var(--black), 7px 7px 0 4px var(--white);
+    font-family: "cubano", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 1rem 2rem;
+    box-shadow: 5px 5px 0 var(--black), 5px 5px 0 3px var(--white);
+    font-family: "cubano", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* --- CONTAINER --- */
+/* --- CONTAINER --- */
+/* --- CONTAINER --- */
+
+.container {
+    padding: 0 5%;
+}
+
+/* --- HEADER --- */
+/* --- HEADER --- */
+/* --- HEADER --- */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.svg {
+    width: 170px;
+    max-width: 100%;
+}
+
+/* --- BANDEAU --- */
+/* --- BANDEAU --- */
+/* --- BANDEAU --- */
+
+.event {
+    background-color: var(--yellow);
+    padding: 1rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+}
+
+.banger {
+    font-family: "cubano", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: var(--blue);
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* --- MAIN EVENT --- */
+/* --- MAIN EVENT --- */
+/* --- MAIN EVENT --- */
+
+.main-event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+}
+
+/* --- NIE LOUPER --- */
+/* --- NIE LOUPER --- */
+/* --- NIE LOUPER --- */
+
+.louper {
+    background-color: var(--yellow);
+}
+
+.bringues {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2.bringues {
+    color: var(--black);
+}
+
+

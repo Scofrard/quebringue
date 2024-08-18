@@ -216,6 +216,10 @@ header {
     margin-right: 40px;
 }
 
+.arrow a {
+    cursor: pointer;
+}
+
 ::-webkit-scrollbar {
     width: 7px;
     height: 7px;

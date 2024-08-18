@@ -22,27 +22,7 @@ body {
 
 h1 {
     font-family: "cubano", sans-serif;
-    font-size: 6rem;
-    line-height: 90%;
     color: var(--white);
-    margin: 0;
-}
-
-h2 {
-    font-family: "cubano", sans-serif;
-    font-size: 2.5rem;
-    line-height: 95%;
-}
-
-h3 {
-    font-family: "cubano", sans-serif;
-    font-size: 1.8rem;
-}
-
-p {
-    font-family: "Sora", sans-serif;
-    font-weight: 200;
-    font-size: 20px;
     margin: 0;
 }
 
@@ -57,12 +37,12 @@ a {
 .btn-primary {
     color: var(--black);
     background-color: var(--yellow);
-    padding: 1rem 2rem;
-    box-shadow: 7px 7px 0 var(--black), 7px 7px 0 4px var(--white);
+    padding: 0.7rem 0.7rem;
+    box-shadow: 5px 5px 0 var(--black), 5px 5px 0 3px var(--white);
     font-family: "cubano", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     display: inline-block;
 }
@@ -70,7 +50,7 @@ a {
 .btn-secondary {
     color: var(--white);
     background-color: var(--blue);
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     box-shadow: 5px 5px 0 var(--black), 5px 5px 0 3px var(--white);
     font-family: "cubano", sans-serif;
     font-size: 1.5rem;
@@ -94,7 +74,8 @@ a {
 /* --- CONTAINER --- */
 
 .container {
-    padding: 0 5%;
+    width: 100vw;
+    max-width: 100%;
 }
 
 /* --- HEADER --- */
@@ -108,9 +89,14 @@ header {
     margin: 1rem 0;
 }
 
-.svg {
-    width: 170px;
+.logosvg {
+    width: 120px;
     max-width: 100%;
+    margin-left: 20px;
+}
+
+.btnreservation {
+    margin-right: 20px; 
 }
 
 /* --- BANDEAU --- */
@@ -119,7 +105,7 @@ header {
 
 .event {
     background-color: var(--yellow);
-    padding: 1rem 0;
+    padding: 0.7rem 0;
     overflow: hidden;
     white-space: nowrap;
     display: flex;
@@ -129,7 +115,7 @@ header {
     font-family: "cubano", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
     color: var(--blue);
     display: inline-block;
     animation: scroll 20s linear infinite;
@@ -148,23 +134,32 @@ header {
 /* --- MAIN EVENT --- */
 /* --- MAIN EVENT --- */
 
-.main-event {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem;
+.main-event-content img {
+    max-width: 100vw;
+    width: 100%;
+}
+
+.main-event-infos {
+    margin: 2rem 20px;
 }
 
 .main-event h1 {
-    margin-bottom: 3rem;
+    font-size: 4rem;
+    line-height: 95%;
+    margin-bottom: 1.5rem;
 }
 
 .main-event p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.iconevent {
+    display: flex;
+    align-items: center;
 }
 
 .main-event a {
-    margin-top: 2rem;
+    margin-top: 1rem;
     }
 
 /* --- NIE LOUPER --- */
@@ -179,36 +174,60 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 20px;
+    padding: 1.5rem 0;
 }
 
-h2.bringues {
+.bringues h2 {
+    font-family: "cubano", sans-serif;
     color: var(--black);
+    font-size: 1.5rem;
+}
+
+.arrow a svg {
+    background-color: var(--white);
+    border: solid 5px var(--black);
 }
 
 /* --- CARDS --- */
 /* --- CARDS --- */
 /* --- CARDS --- */
-
 
 .cards {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory; 
-    gap: 5rem; 
-    padding-bottom: 5rem;
+    overflow-x: scroll;
+    /*scroll-snap-type: x proximity;*/
 }
 
 .card {
-    flex: 0 0 30%; 
-    scroll-snap-align: start;
+    /*scroll-snap-align: center;*/
     background-color: var(--blue);
     color: var(--black);
+    min-width: 300px; 
     max-width: 400px; 
-    position: relative;
-    padding-bottom: 2rem;
+    margin: 0 30px 3rem 20px;
+    padding-bottom: 1.5rem;
     box-shadow: 
         12px 12px 0 var(--yellow), 
         12px 12px 0 8px var(--blue);
+}
+
+.cards .card:last-child {
+    margin-right: 40px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--yellow);
 }
 
 .card:nth-child(3n+1) {
@@ -232,28 +251,31 @@ h2.bringues {
         12px 12px 0 8px var(--pink);
 }
 
-
 .card img {
     width: 100%;
     object-fit: cover;
 }
 
 .contentcard {
-    margin: 0 2rem;
+    margin: 0 1.5rem;
 }
 
 .contentcard h3 {
-    margin-bottom: 2rem;
-    }
+    font-family: "cubano", sans-serif;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
 
 .contentcard p {
-    line-height: 0;
-    margin-bottom: 2rem;
+    font-size: 16px;
 }
 
-.contentcard .btn-tertiaire {
-    float: right;
+.contentcard a {
+    margin-top: 1rem;
 }
+
+
+
 
 
 

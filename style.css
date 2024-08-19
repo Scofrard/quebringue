@@ -96,7 +96,7 @@ header {
 }
 
 .btnreservation {
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 /* --- BANDEAU --- */
@@ -134,9 +134,14 @@ header {
 /* --- MAIN EVENT --- */
 /* --- MAIN EVENT --- */
 
+.main-event {
+    padding-bottom: 2rem;
+}
+
 .main-event-content img {
     max-width: 100vw;
     width: 100%;
+    object-fit: cover;
 }
 
 .main-event-infos {
@@ -181,7 +186,7 @@ header {
 .bringues h2 {
     font-family: "cubano", sans-serif;
     color: var(--black);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .arrow a svg {
@@ -266,7 +271,7 @@ header {
 
 .contentcard h3 {
     font-family: "cubano", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: 1rem 0;
 }
 
@@ -286,7 +291,7 @@ header {
     font-family: "cubano", sans-serif;
     color: var(--white);
     font-size: 1.5rem;
-    line-height: 26px;
+    line-height: 28px;
     text-align: center;
     margin: 2rem 20px;
 }

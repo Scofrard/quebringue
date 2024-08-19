@@ -278,6 +278,54 @@ header {
     margin-top: 1rem;
 }
 
+/* --- MAPS --- */
+/* --- MAPS --- */
+/* --- MAPS --- */
+
+.container h4 {
+    font-family: "cubano", sans-serif;
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 26px;
+    text-align: center;
+    margin: 2rem 20px;
+}
+
+
+/* --- FOOTER --- */
+/* --- FOOTER --- */
+/* --- FOOTER --- */
+
+footer {
+    margin: 2rem 20px;
+}
+
+.footercolumn {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.footercolumn.one ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footercolumn h5 {
+    font-family: "cubano", sans-serif;
+    color: var(--white);
+    font-size: 1.7rem;
+}
+
+.footercolumn ul li {
+    margin: 20px 0;
+}
+
+.footercolumn ul li a {
+    font-family: "cubano", sans-serif;
+    color: var(--white);
+}
 
 
 

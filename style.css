@@ -15,8 +15,8 @@ body {
     padding:0;
     background-color: var(--black);
     font-family: "Sora", sans-serif;
-    font-weight: 200;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 16px;
     color: var(--white);
 }
 
@@ -24,6 +24,15 @@ h1 {
     font-family: "cubano", sans-serif;
     color: var(--white);
     margin: 0;
+}
+
+h4 {
+    font-family: "cubano", sans-serif;
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 28px;
+    text-align: center;
+    margin: 2rem 20px;
 }
 
 a {
@@ -103,7 +112,7 @@ header {
 /* --- BANDEAU --- */
 /* --- BANDEAU --- */
 
-.event {
+.headband {
     background-color: var(--yellow);
     padding: 0.7rem 0;
     overflow: hidden;
@@ -111,22 +120,57 @@ header {
     display: flex;
 }
 
-.banger {
+.backtownsecond {
+    background-color: var(--blue);
+}
+
+.backtownthird {
+    background-color: var(--pink);
+}
+
+.content {
     font-family: "cubano", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.2rem;
-    color: var(--blue);
     display: inline-block;
+}
+
+.banger {
+    color: var(--blue);
     animation: scroll 20s linear infinite;
 }
 
-@keyframes scroll {
+.townfirst {
+    color: var(--pink);
+    animation: scroll-left 30s linear infinite;
+}
+
+.townsecond {
+    color: var(--yellow);
+    animation: scroll-right 25s linear infinite;
+}
+
+.townthird {
+    color: var(--blue);
+    animation: scroll-left 35s linear infinite;
+}
+
+@keyframes scroll-left {
     0% {
         transform: translateX(0);
     }
     100% {
         transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
 
@@ -146,6 +190,7 @@ header {
 
 .main-event-infos {
     margin: 2rem 20px;
+    font-size: 18px;
 }
 
 .main-event h1 {
@@ -275,26 +320,59 @@ header {
     margin: 1rem 0;
 }
 
-.contentcard p {
-    font-size: 16px;
-}
-
 .contentcard a {
     margin-top: 1rem;
 }
 
-/* --- MAPS --- */
-/* --- MAPS --- */
-/* --- MAPS --- */
+/* --- AVIS --- */
+/* --- AVIS --- */
+/* --- AVIS --- */
 
-.container h4 {
-    font-family: "cubano", sans-serif;
-    color: var(--white);
-    font-size: 1.5rem;
-    line-height: 28px;
-    text-align: center;
-    margin: 2rem 20px;
+.noticeglobal {
+margin: 0 20px;
 }
+
+.allstars {
+    text-align: center;
+}
+
+.allcomments {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.cardcomment {
+    background-color: var(--white);
+    margin: 2rem 20px;
+    padding: 1.7rem 1.2rem;
+}
+
+.cardcomment p {
+ color: var(--black);
+ font-size: 14px;
+ line-height: 22px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.author span {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--black);
+}
+
+.stars svg {
+    width: 18px;
+}
+
+/* --- MAPS --- */
+/* --- MAPS --- */
+/* --- MAPS --- */
 
 
 /* --- FOOTER --- */
@@ -320,15 +398,16 @@ footer {
 .footercolumn h5 {
     font-family: "cubano", sans-serif;
     color: var(--white);
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 
 .footercolumn ul li {
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .footercolumn ul li a {
     font-family: "cubano", sans-serif;
+    font-size: 18px;
     color: var(--white);
 }
 

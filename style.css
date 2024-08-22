@@ -23,7 +23,22 @@ body {
 h1 {
     font-family: "cubano", sans-serif;
     color: var(--white);
-    margin: 0;
+    font-size: 4rem;
+    line-height: 95%;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: "cubano", sans-serif;
+    color: var(--black);
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-family: "cubano", sans-serif;
+    font-size: 1.6rem;
+    line-height: 30px;
+    margin: 1rem 0;
 }
 
 h4 {
@@ -32,7 +47,13 @@ h4 {
     font-size: 1.5rem;
     line-height: 28px;
     text-align: center;
-    margin: 2rem 20px;
+    margin: 4rem 20px 1.5rem 20px;
+}
+
+h5 {
+    font-family: "cubano", sans-serif;
+    color: var(--white);
+    font-size: 1.6rem;
 }
 
 a {
@@ -41,6 +62,13 @@ a {
     font-style: normal;
     text-decoration: none;
     color: var(--blue);
+}
+
+p{
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 .btn-primary {
@@ -76,6 +104,18 @@ a {
     font-size: 1.3rem;
     text-decoration: none;
     display: inline-block;
+}
+
+.btn-contact {
+    color: var(--black);
+    background-color: var(--white);
+    padding: 1rem 2rem;
+    box-shadow: 5px 5px 0 var(--black), 5px 5px 0 3px var(--white);
+    font-family: "cubano", sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem;
 }
 
 /* --- CONTAINER --- */
@@ -193,12 +233,6 @@ header {
     font-size: 18px;
 }
 
-.main-event h1 {
-    font-size: 4rem;
-    line-height: 95%;
-    margin-bottom: 1.5rem;
-}
-
 .main-event p {
     margin-bottom: 0.5rem;
 }
@@ -228,12 +262,6 @@ header {
     padding: 1.5rem 0;
 }
 
-.bringues h2 {
-    font-family: "cubano", sans-serif;
-    color: var(--black);
-    font-size: 1.7rem;
-}
-
 .arrow a svg {
     background-color: var(--white);
     border: solid 5px var(--black);
@@ -246,11 +274,17 @@ header {
 .cards {
     display: flex;
     overflow-x: scroll;
-    /*scroll-snap-type: x proximity;*/
+    scroll-snap-type: x proximity;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer - Edge */
+}
+
+.cards::-webkit-scrollbar {
+    display: none; /* Chrome - Safari - Opera */
 }
 
 .card {
-    /*scroll-snap-align: center;*/
+    scroll-snap-align: center;
     background-color: var(--blue);
     color: var(--black);
     min-width: 300px; 
@@ -268,20 +302,6 @@ header {
 
 .arrow a {
     cursor: pointer;
-}
-
-::-webkit-scrollbar {
-    width: 7px;
-    height: 7px;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-    padding: 1px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--yellow);
 }
 
 .card:nth-child(3n+1) {
@@ -314,12 +334,6 @@ header {
     margin: 0 1.5rem;
 }
 
-.contentcard h3 {
-    font-family: "cubano", sans-serif;
-    font-size: 1.6rem;
-    margin: 1rem 0;
-}
-
 .contentcard a {
     margin-top: 1rem;
 }
@@ -328,9 +342,49 @@ header {
 /* --- AVIS --- */
 /* --- AVIS --- */
 
-.noticeglobal {
-margin: 0 20px;
+/* Pagination Dots */
+.pagination-dots {
+    display: flex;
+    justify-content: center;
 }
+
+.dot {
+    height: 7px;
+    width: 7px;
+    margin: 0 5px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: var(--pink);
+}
+
+.comments {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer - Edge */
+}
+
+.comments::-webkit-scrollbar {
+    display: none; /*Chrome - Safari - Opera */
+}
+
+.cardcomment {
+    scroll-snap-align: center;
+    min-width: 300px; 
+    max-width: 400px;
+    margin: 2rem 20px;
+    padding: 1.7rem 1.2rem;
+    background-color: var(--white);
+}
+
+.noticeglobal {
+    margin: 0 20px;
+    }
 
 .allstars {
     text-align: center;
@@ -370,6 +424,21 @@ margin: 0 20px;
     width: 18px;
 }
 
+/* --- CONTACT --- */
+/* --- CONTACT --- */
+/* --- CONTACT --- */
+
+.contact {
+    text-align: center;
+    margin: 4rem 20px;
+}
+
+.contact p span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
 /* --- MAPS --- */
 /* --- MAPS --- */
 /* --- MAPS --- */
@@ -393,12 +462,6 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 20px;
-}
-
-.footercolumn h5 {
-    font-family: "cubano", sans-serif;
-    color: var(--white);
-    font-size: 1.6rem;
 }
 
 .footercolumn ul li {

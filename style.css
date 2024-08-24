@@ -145,7 +145,7 @@ p{
 @media screen and (min-width: 760px) {
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     h4 {
@@ -163,6 +163,37 @@ p{
     .btn-contact {
         margin: 0;
     }
+}
+
+@media screen and (min-width: 1024px) {
+
+    h1 {
+        font-size: 5rem;
+        line-height: 95%;
+        margin-bottom: 3rem;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        max-width: 100%;
+        font-size: 2rem;
+    }
+
+    .btn-primary {
+        font-size: 1.5rem;
+    }
+
+    .btn-secondary {
+        font-size: 2rem;
+    } 
+
 }
 
 /* --- CONTAINER --- */
@@ -215,7 +246,6 @@ header {
     .btnreservation {
         margin-right: 0px;
     }
-
 }
 
 /* --- BANDEAU --- */
@@ -329,11 +359,57 @@ header {
 
     .main-event {
         display: flex;
+        justify-content: space-between;
         gap: 30px;
         padding: 5rem 0;
     }
 
+    .main-event p {
+        font-size: 18px;
+    }
+
+    .main-event-infos {
+        margin: 2rem 0;
+    }
 }
+
+@media screen and (min-width: 810px) {
+
+    .main-event {
+        max-width: 810px;
+        margin: 0 auto;
+    }
+   
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .main-event {
+        max-width: 910px;
+        margin: 0 auto;
+    }
+
+    .main-event-content img {
+        max-width: 100%;
+        width: 500px;
+        object-fit: cover;
+    }
+    
+    .main-event p {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .main-event a {
+        margin-top: 3rem;
+        }
+    
+    .iconevent svg {
+        transform: scale(1.2);
+    }
+   
+}
+
 
 /* --- NIE LOUPER --- */
 
@@ -395,7 +471,17 @@ header {
         display: flex;
         gap: 16px;
     }
+}
 
+@media screen and (min-width: 1024px) {
+
+    .louper {
+        padding: 3rem 0 0 0;
+    }
+
+    .arrow {
+        transform: scale(1.2);
+    }
 }
 
 /* --- CARDS --- */
@@ -462,7 +548,14 @@ header {
 @media screen and (min-width: 760px) {
 
     .card {
-        margin: 0 3vw 5rem 5vw;
+        margin: 0 1rem 5rem 5vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .card {
+        min-width: 350px; 
     }
 
 }
@@ -598,6 +691,15 @@ header {
     }
 }
 
+@media screen and (min-width: 810px) {
+
+    .contact {
+        max-width: 760px;
+        margin: 5rem auto;
+    }
+   
+}
+
 /* --- MAPS --- */
 
 
@@ -624,6 +726,11 @@ footer {
 
 .footercolumn ul li a:hover {
     color: var(--yellow);
+}
+
+.footercolumn.one img{
+    width: 180px;
+    margin: 0 auto 3rem auto;
 }
 
 .footercolumn.one ul {
@@ -710,9 +817,6 @@ footer {
 
     .footercolumn{
         margin: 0;
-    }
-
-    .footercolumn h5 {
         text-align: left;
     }
 
@@ -720,8 +824,9 @@ footer {
         justify-content: left;
     }
 
-    .footercolumn li {
-        text-align: left;
+    .footercolumn.one img{
+        width: 180px;
+        margin-bottom: 50px;
     }
 
 }

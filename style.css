@@ -1,6 +1,4 @@
 /* --- ELEMENTS --- */
-/* --- ELEMENTS --- */
-/* --- ELEMENTS --- */
 
 :root {
     --black: #0D0D0D;
@@ -42,16 +40,18 @@ h3 {
 }
 
 h4 {
-    font-family: "cubano", sans-serif;
+    font-family: "Sora", sans-serif;
+    font-weight: 800;
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 28px;
     text-align: center;
-    margin: 4rem 20px 1.5rem 20px;
+    margin: 4rem 20px 2rem 20px;
 }
 
 h5 {
-    font-family: "cubano", sans-serif;
+    font-family: "Sora", sans-serif;
+    font-weight: 800;
     color: var(--white);
     font-size: 1.6rem;
 }
@@ -144,8 +144,25 @@ p{
 
 @media screen and (min-width: 760px) {
 
-   
+    h2 {
+        font-size: 1.8rem;
+    }
 
+    h4 {
+        max-width: 500px;
+        margin: 7rem auto 3rem auto;
+        font-size: 1.7rem;
+        line-height: 36px;
+    }
+
+    .btn-primary {
+        padding: 0.7rem 0.7rem;
+        font-size: 1.3rem;
+    }
+
+    .btn-contact {
+        margin: 0;
+    }
 }
 
 /* --- CONTAINER --- */
@@ -157,15 +174,24 @@ p{
     max-width: 100%;
 }
 
-/* --- HEADER --- */
-/* --- HEADER --- */
+@media screen and (min-width: 760px) {
+
+    .container {
+        width: 90vw;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
 /* --- HEADER --- */
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1rem 0;
+    margin: 1rem auto;
 }
 
 .logosvg {
@@ -178,8 +204,20 @@ header {
     margin-right: 20px;
 }
 
-/* --- BANDEAU --- */
-/* --- BANDEAU --- */
+@media screen and (min-width: 760px) {
+
+    .logosvg {
+        width: 150px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+     
+    .btnreservation {
+        margin-right: 0px;
+    }
+
+}
+
 /* --- BANDEAU --- */
 
 .headband {
@@ -244,8 +282,19 @@ header {
     }
 }
 
-/* --- MAIN EVENT --- */
-/* --- MAIN EVENT --- */
+@media screen and (min-width: 760px) {
+
+    .headband {
+        padding: 1rem 0;
+    }
+
+    .content {
+        font-size: 1.5rem;
+
+    }
+
+}
+
 /* --- MAIN EVENT --- */
 
 .main-event {
@@ -276,12 +325,21 @@ header {
     margin-top: 1rem;
     }
 
-/* --- NIE LOUPER --- */
-/* --- NIE LOUPER --- */
+@media screen and (min-width: 760px) {
+
+    .main-event {
+        display: flex;
+        gap: 30px;
+        padding: 5rem 0;
+    }
+
+}
+
 /* --- NIE LOUPER --- */
 
 .louper {
     background-color: var(--yellow);
+    padding: 3rem 0 0rem 0;
 }
 
 .bringues {
@@ -289,7 +347,16 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: 0 20px;
-    padding: 1.5rem 0;
+    padding-bottom: 2rem;
+}
+
+.bringuetitle {
+    max-width: 180px;
+}
+
+.arrow {
+    display: flex;
+    gap: 8px;
 }
 
 .arrow a {
@@ -307,8 +374,30 @@ header {
     border: solid 5px var(--black);
 }
 
-/* --- CARDS --- */
-/* --- CARDS --- */
+@media screen and (min-width: 760px) {
+
+    .louper {
+        padding: 2rem 0 0 0;
+    }
+
+    .bringues {
+        width: 90vw;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .bringuetitle {
+        max-width: 100%;
+    }
+
+    .arrow {
+        display: flex;
+        gap: 16px;
+    }
+
+}
+
 /* --- CARDS --- */
 
 .cards {
@@ -328,8 +417,7 @@ header {
     background-color: var(--blue);
     color: var(--black);
     min-width: 300px; 
-    max-width: 400px; 
-    margin: 0 30px 3rem 20px;
+    margin: 0 30px 5rem 20px;
     padding-bottom: 1.5rem;
 }
 
@@ -371,30 +459,32 @@ header {
     margin-top: 1rem;
 }
 
-/* --- AVIS --- */
-/* --- AVIS --- */
-/* --- AVIS --- */
+@media screen and (min-width: 760px) {
 
-.pagination-dots {
-    display: flex;
-    justify-content: center;
+    .card {
+        margin: 0 3vw 5rem 5vw;
+    }
+
 }
 
-.dot {
-    height: 7px;
-    width: 7px;
-    margin: 0 5px;
-    background-color: var(--white);
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.dot.active {
-    background-color: var(--pink);
-}
+/* --- AVIS --- */
 
 /* Masquer la barre de scroll */
 /* https://fr.w3docs.com/snippets/css/comment-masquer-les-barres-de-defilement-avec-css.html */
+
+
+.noticeglobal {
+    margin: 0 20px;
+    }
+
+.allstars {
+    text-align: center;
+}
+
+.allcomments {
+    text-align: center;
+    margin-top: 10px;
+}
 
 .comments {
     display: flex;
@@ -418,30 +508,11 @@ header {
     box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
 }
 
-.noticeglobal {
-    margin: 0 20px;
-    }
-
-.allstars {
-    text-align: center;
-}
-
-.allcomments {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.cardcomment {
-    background-color: var(--white);
-    margin: 2rem 20px;
-    padding: 1.7rem 1.2rem;
-}
-
 .cardcomment p {
- color: var(--black);
- font-size: 14px;
- line-height: 22px;
-}
+    color: var(--black);
+    font-size: 14px;
+    line-height: 22px;
+   }
 
 .author {
     display: flex;
@@ -460,28 +531,76 @@ header {
     width: 18px;
 }
 
-/* --- CONTACT --- */
-/* --- CONTACT --- */
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-dots .dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.pagination-dots .dot.active {
+    background-color: var(--pink);
+}
+
+@media screen and (min-width: 760px) {
+
+    .comments {
+        gap: 30px;
+    }
+
+    .cardcomment {
+        min-width: 300px; 
+        max-width: 400px;
+        margin: 2rem 0;
+        padding: 1.7rem 1.2rem;
+    }
+}
+
 /* --- CONTACT --- */
 
 .contact {
     text-align: center;
-    margin: 4rem 20px;
+    margin: 5rem 20px;
 }
 
-.contact p span {
-    font-size: 1.2rem;
-    font-weight: bold;
+.contact p {
+    font-size: 16px;
+    margin: 1rem 0 1rem 0;
 }
 
+@media screen and (min-width: 760px) {
+
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 6rem 5vw 0 5vw;
+    }
+
+    .question h4 {
+        font-size: 1.5rem;
+        text-align: left;
+        margin: 0;
+    }
+
+    .contact p {
+        font-size: 16px;
+        line-height: 10px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
 
 /* --- MAPS --- */
-/* --- MAPS --- */
-/* --- MAPS --- */
 
 
-/* --- FOOTER --- */
-/* --- FOOTER --- */
 /* --- FOOTER --- */
 
 footer {
@@ -498,7 +617,7 @@ footer {
 }
 
 .footercolumn ul li a {
-    font-family: "cubano", sans-serif;
+    font-family: "Sora", sans-serif;
     font-size: 18px;
     color: var(--white);
 }
@@ -573,6 +692,38 @@ footer {
 
 .footercolumn.one ul li a:hover svg {
     fill: rgba(255, 255, 255, 1);
+}
+
+@media screen and (min-width: 760px) {
+
+    footer {
+        margin: 5rem 0;
+    }
+
+    .footercolumns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .footercolumn{
+        margin: 0;
+    }
+
+    .footercolumn h5 {
+        text-align: left;
+    }
+
+    .footercolumn.one ul {
+        justify-content: left;
+    }
+
+    .footercolumn li {
+        text-align: left;
+    }
+
 }
 
 

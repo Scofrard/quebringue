@@ -67,7 +67,7 @@ a {
 p{
     font-family: "Sora", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
 }
 
@@ -75,47 +75,77 @@ p{
     color: var(--black);
     background-color: var(--yellow);
     padding: 0.7rem 0.7rem;
-    box-shadow: 5px 5px 0 var(--black), 5px 5px 0 3px var(--white);
     font-family: "cubano", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
     text-decoration: none;
     display: inline-block;
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.btn-primary:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 0 var(--black), 5px 5px 0 3px var(--white); 
+}
+
 
 .btn-secondary {
     color: var(--white);
     background-color: var(--blue);
     padding: 1rem 1.5rem;
-    box-shadow: 5px 5px 0 var(--black), 5px 5px 0 3px var(--white);
     font-family: "cubano", sans-serif;
     font-size: 1.5rem;
     text-decoration: none;
     display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.btn-secondary:hover {
+    box-shadow: 5px 5px 0 var(--black), 5px 5px 0 3px var(--white);
+    transform: translate(-5px, -5px);
+}
+
 
 .btn-tertiaire {
     color: var(--white);
     background-color: var(--black);
     padding: 1rem 2rem;
-    box-shadow: 5px 5px 0 var(--white), 5px 5px 0 3px var(--black);
     font-family: "cubano", sans-serif;
     font-size: 1.3rem;
     text-decoration: none;
     display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-tertiaire:hover {
+    box-shadow: 5px 5px 0 var(--white), 5px 5px 0 3px var(--black);
+    transform: translate(-5px, -5px);
 }
 
 .btn-contact {
     color: var(--black);
     background-color: var(--white);
     padding: 1rem 2rem;
-    box-shadow: 5px 5px 0 var(--black), 5px 5px 0 3px var(--white);
     font-family: "cubano", sans-serif;
     font-size: 1.3rem;
     text-decoration: none;
     display: inline-block;
     margin: 1rem;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-contact:hover {
+    box-shadow: 5px 5px 0 var(--black), 5px 5px 0 3px var(--white);
+    transform: translate(-5px, -5px);
+
+}
+
+@media screen and (min-width: 760px) {
+
+   
+
 }
 
 /* --- CONTAINER --- */
@@ -262,6 +292,16 @@ header {
     padding: 1.5rem 0;
 }
 
+.arrow a {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.arrow a:hover {
+    transform: scale(1.05);
+}
+
 .arrow a svg {
     background-color: var(--white);
     border: solid 5px var(--black);
@@ -291,17 +331,10 @@ header {
     max-width: 400px; 
     margin: 0 30px 3rem 20px;
     padding-bottom: 1.5rem;
-    box-shadow: 
-        12px 12px 0 var(--yellow), 
-        12px 12px 0 8px var(--blue);
 }
 
 .cards .card:last-child {
     margin-right: 40px;
-}
-
-.arrow a {
-    cursor: pointer;
 }
 
 .card:nth-child(3n+1) {
@@ -342,7 +375,6 @@ header {
 /* --- AVIS --- */
 /* --- AVIS --- */
 
-/* Pagination Dots */
 .pagination-dots {
     display: flex;
     justify-content: center;
@@ -360,6 +392,9 @@ header {
 .dot.active {
     background-color: var(--pink);
 }
+
+/* Masquer la barre de scroll */
+/* https://fr.w3docs.com/snippets/css/comment-masquer-les-barres-de-defilement-avec-css.html */
 
 .comments {
     display: flex;
@@ -380,6 +415,7 @@ header {
     margin: 2rem 20px;
     padding: 1.7rem 1.2rem;
     background-color: var(--white);
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
 }
 
 .noticeglobal {
@@ -488,6 +524,9 @@ footer {
     background-color: var(--white);
     transition: background-color 0.3s ease;
 }
+
+/* Animation icone réseaux sociaux */
+/* https://www.youtube.com/watch?v=UQKWc2r_41U */
 
 .footercolumn.one ul li a::before {
     content: attr(data-social);

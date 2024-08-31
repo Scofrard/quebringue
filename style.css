@@ -896,7 +896,125 @@ footer {
 }
 
 
+/* --- FORMULAIRE RESERVATION --- */
 
+.reservation-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--yellow);
+
+    position: relative;
+}
+
+h3.form-title  {
+    color: var(--black);
+    font-size: 1.8rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem 1rem 0 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 1.2rem 0;
+}
+
+.form-group label {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group input {
+    color: var(--black);
+    background-color: var(--white);
+    border: 3px solid var(--black);
+    padding: 16px; 
+    font-family: "cubano", sans-serif;
+    font-weight: 500;
+    font-size: 22px; 
+    transition: border-color 0.3s ease; 
+}
+
+input:focus,
+input[type="number"]:focus,
+select:focus,
+button:focus {
+    outline: none;
+    border-color: var(--pink);
+}
+
+.places-group  {
+    margin: 1.2rem 0;
+}
+
+.places-group label {
+    color: var(--black);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.places-control {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    gap: 5px;
+}
+
+.places-btn {
+    background-color: var(--white);
+    color: var(--black);
+    border: solid 3px var(--black);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.places-control input {
+    background-color: var(--white);
+    text-align: center;
+    border: solid 3px var(--black);
+    width: 55px;
+    height: 44px;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.reservation {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.reservation:hover {
+    box-shadow: 5px 5px 0 var(--yellow), 5px 5px 0 3px var(--black); 
+}
 
 
 

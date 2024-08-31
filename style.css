@@ -931,6 +931,11 @@ h3.form-title  {
     padding: 5px;
 }
 
+.close-btn:hover {
+    background-color: var(--black);
+    color: var(--pink);
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -1013,9 +1018,23 @@ button:focus {
 }
 
 .reservation:hover {
-    box-shadow: 5px 5px 0 var(--yellow), 5px 5px 0 3px var(--black); 
+    background-color: var(--pink);
+    box-shadow: 5px 5px 0 var(--yellow), 5px 5px 0 3px var(--pink); 
+}  
+
+.form-link a {
+    display: block;
+    color: var(--black);
+    margin: 20px 0;
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
 }
 
+.form-link a:hover {
+    color: var(--pink);
+}
 
 
 

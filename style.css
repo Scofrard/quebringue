@@ -223,6 +223,18 @@ p{
     
 }
 
+/* --- ACCESSIBILITY LINK VISIBLE --- */
+
+.linkvisible {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 20px 0 0 -45px;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
 /* --- HEADER --- */
 
 header {
@@ -502,16 +514,6 @@ a[data-tooltip-text]::after {
 
 a[data-tooltip-text]:hover::after {
     opacity: 1;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
 }
 
 

@@ -611,7 +611,7 @@ header {
 .comments {
     display: flex;
     overflow-x: scroll;
-    /*scroll-snap-type: x mandatory;*/
+    scroll-snap-type: x mandatory;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer - Edge */
 }
@@ -896,9 +896,9 @@ footer {
 }
 
 
-/* --- FORMULAIRE RESERVATION --- */
+/* --- FORMULAIRES --- */
 
-.reservation-form {
+.form {
     display: flex;
     align-items: center;
     justify-content: center;

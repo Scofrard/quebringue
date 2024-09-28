@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -518,6 +519,7 @@
 </body>
 
 <script>
+
     document.querySelector('.next').addEventListener('click', function (e) {
         e.preventDefault();
         const container = document.querySelector('.cards');
@@ -531,9 +533,7 @@
         const scrollAmount = container.querySelector('.card').offsetWidth + 50;
         container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     });
-</script>
 
-<script>
     document.addEventListener('DOMContentLoaded', function () {
         const cards = document.querySelectorAll('.cardcomment');
         const dots = document.querySelectorAll('.pagination-dots .dot');
@@ -558,7 +558,7 @@
             observer.observe(card);
         });
     });
-</script>
 
+</script>
 
 </html>

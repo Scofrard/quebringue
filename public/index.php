@@ -2,7 +2,7 @@
 
 <header class="container">
     <div class="logosvg">
-        <img src="assets/svg/logoquebringue.svg" alt="Logo Québringue">
+        <img src="../assets/svg/logoquebringue.svg" alt="Logo Québringue">
     </div>
     <div class="btnreservation">
         <a href="formlogin.php" class="btn-primary">Tes réservations</a>
@@ -23,7 +23,7 @@
 
 <div class="container main-event">
     <div class="main-event-content">
-        <img src="assets/img/concert_lorenzo.png" alt="">
+        <img src="../assets/img/concert_lorenzo.png" alt="">
     </div>
     <div class="main-event-infos">
         <h1>Concert<br>Lorenzo</h1>
@@ -75,7 +75,7 @@
     </div>
     <div class="cards">
         <div class="card">
-            <img src="assets/img/concert_lorenzo.png" alt="">
+            <img src="../assets/img/concert_lorenzo.png" alt="">
             <div class="contentcard">
                 <h3>Concert Lorenzo</h3>
                 <div class="iconevent">
@@ -100,7 +100,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="assets/img/concert_lorenzo.png" alt="">
+            <img src="../assets/img/concert_lorenzo.png" alt="">
             <div class="contentcard">
                 <h3>Concert Lorenzo</h3>
                 <div class="iconevent">
@@ -125,7 +125,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="assets/img/concert_lorenzo.png" alt="">
+            <img src="../assets/img/concert_lorenzo.png" alt="">
             <div class="contentcard">
                 <h3>Concert Lorenzo</h3>
                 <div class="iconevent">
@@ -150,7 +150,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="assets/img/concert_lorenzo.png" alt="">
+            <img src="../assets/img/concert_lorenzo.png" alt="">
             <div class="contentcard">
                 <h3>Concert Lorenzo</h3>
                 <div class="iconevent">
@@ -175,7 +175,7 @@
             </div>
         </div>
         <div class="card">
-            <img src="assets/img/concert_lorenzo.png" alt="">
+            <img src="../assets/img/concert_lorenzo.png" alt="">
             <div class="contentcard">
                 <h3>Concert Lorenzo</h3>
                 <div class="iconevent">
@@ -429,7 +429,7 @@
 <footer>
     <div class="footercolumns">
         <div class="footercolumn one">
-            <img src="assets/svg/logoquebringue.svg" alt="Logo Québringue">
+            <img src="../assets/svg/logoquebringue.svg" alt="Logo Québringue">
             <h5>Follow nous</h5>
             <ul>
                 <li>

@@ -1,4 +1,6 @@
-<?php include 'partials/header.php'; ?>
+<?php
+require 'partials/header.php'; // Inclure le header
+?>
 
 <div class="form">
     <div>

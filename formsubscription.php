@@ -17,7 +17,7 @@
 
     <div class="form">
         <div>
-            <a href="index.html" class="close-btn">X</a>
+            <a href="index.php" class="close-btn">X</a>
             <h3 class="form-title">Inscription</h3>
             <form action="#" method="POST">
                 <div class="form-row">
@@ -45,7 +45,7 @@
                 <button type="submit" class="btn-primary reservation">S'INSCRIRE</button>
             </form>
             <div class="form-link">
-                <a href="formlogin.html">Déjà un compte ? Connecte-toi</a>
+                <a href="formlogin.php">Déjà un compte ? Connecte-toi</a>
             </div>
         </div>
     </div>

@@ -20,7 +20,7 @@
             <img src="svg/logoquebringue.svg" alt="Logo Québringue">
         </div>
         <div class="btnreservation">
-            <a href="formlogin.html" class="btn-primary">Tes réservations</a>
+            <a href="formlogin.php" class="btn-primary">Tes réservations</a>
         </div>
     </header>
 
@@ -38,7 +38,7 @@
 
     <div class="container main-event">
         <div class="main-event-content">
-            <img src="/img/concert_lorenzo.png" alt="">
+            <img src="img/concert_lorenzo.png" alt="">
         </div>
         <div class="main-event-infos">
             <h1>Concert<br>Lorenzo</h1>
@@ -60,7 +60,7 @@
                 </svg>
                 <p>Grand place de Tournai</p>
             </div>
-            <a href="formreservation.html" class="btn-secondary">Réserver</a>
+            <a href="formreservation.php" class="btn-secondary">Réserver</a>
         </div>
     </div>
 
@@ -519,22 +519,27 @@
 </body>
 
 <script>
-
-    document.querySelector('.next').addEventListener('click', function (e) {
+    document.querySelector('.next').addEventListener('click', function(e) {
         e.preventDefault();
         const container = document.querySelector('.cards');
         const scrollAmount = container.querySelector('.card').offsetWidth + 50;
-        container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        container.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
     });
 
-    document.querySelector('.prev').addEventListener('click', function (e) {
+    document.querySelector('.prev').addEventListener('click', function(e) {
         e.preventDefault();
         const container = document.querySelector('.cards');
         const scrollAmount = container.querySelector('.card').offsetWidth + 50;
-        container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        container.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
     });
 
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         const cards = document.querySelectorAll('.cardcomment');
         const dots = document.querySelectorAll('.pagination-dots .dot');
 
@@ -551,14 +556,15 @@
                     });
                 }
             });
-        }, { threshold: 0.5 });  // On considère l'élément visible lorsqu'il est au moins à 50% visible
+        }, {
+            threshold: 0.5
+        }); // On considère l'élément visible lorsqu'il est au moins à 50% visible
 
         // Observer chaque carte
         cards.forEach(card => {
             observer.observe(card);
         });
     });
-
 </script>
 
 </html>

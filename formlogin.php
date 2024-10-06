@@ -17,7 +17,7 @@
 
     <div class="form">
         <div>
-            <a href="index.html" class="close-btn">X</a>
+            <a href="index.php" class="close-btn">X</a>
             <h3 class="form-title">Connexion</h3>
             <form action="#" method="POST">
                 <div class="form-row">
@@ -35,7 +35,7 @@
                 <button type="submit" class="btn-primary reservation">SE CONNECTER</button>
             </form>
             <div class="form-link">
-                <a href="formsubscription.html">Pas de compte ? Inscris-toi</a>
+                <a href="formsubscription.php">Pas de compte ? Inscris-toi</a>
                 <a href="#">Mot de passe oublié ?</a></p>
             </div>
         </div>

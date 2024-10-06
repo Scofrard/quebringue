@@ -17,7 +17,7 @@
 
     <div class="form">
         <div>
-            <a href="index.html" class="close-btn">X</a>
+            <a href="index.php" class="close-btn">X</a>
             <h3 class="form-title">Réserve ichi ta bringue</h3>
             <form action="#" method="POST">
                 <div class="form-row">

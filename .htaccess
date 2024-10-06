@@ -1,0 +1,13 @@
+# Activer le moteur de réécriture
+
+RewriteEngine On
+
+# Définir l'index par défaut pour les requêtes à la racine
+
+DirectoryIndex public/index.php
+
+# Rediriger toutes les requêtes vers le dossier public, sauf si le fichier ou dossier existe
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.\*)$ public/$1 [L,QSA]

@@ -10,7 +10,7 @@ $dsn = "mysql:host=$host;port=8889;dbname=$dbname;charset=utf8mb4"; // Ajouter c
 try {
     $bdd = new PDO($dsn, $username, $passwordbdd);
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    //echo "Connexion établie";
+    echo "Connexion établie";
 } catch (PDOException $e) {
     echo "Erreur de connexion : " . $e->getMessage();
 }
